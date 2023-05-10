@@ -1,0 +1,287 @@
+$turquoise: #2DFCD8;
+$grey: #131111;
+
+.aboutMe {
+  background-color: $grey;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+
+  img {
+    height: 210px;
+    width: 210px;
+    border-radius: 100%;
+    margin: 69px 0 66px 0;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-left: 80px;
+
+  h2 {
+    margin: 80px 0 26px 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  span {
+    width: 486px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.line {
+  position: absolute;
+  left: 15%;
+  width: 70%;
+}
+
+.journeys {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px 55px 0 55px;
+}
+
+.journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 124px;
+  width: 400px;
+  margin-left: 45px;
+  margin-right: 45px;
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+
+  h3 {
+    margin: 22px 0 12px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: $turquoise;
+    text-align: center;
+  }
+
+  hr {
+    width: 100px;
+    color: grey;
+  }
+
+  span {
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 2200px) {
+  .introduction img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .right {
+    h2 {
+      font-size: 46px;
+    }
+
+    span {
+      width: 520px;
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+
+  .journey {
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    h3 {
+      margin: 22px 0 12px 0;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    span {
+      line-height: 32px;
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .journeys {
+    margin: 100px 70px 0 70px;
+  }
+
+  .journey {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .journeys {
+    flex-wrap: wrap;
+  }
+
+  .journey {
+    margin-bottom: 60px;
+  }
+
+  .right span {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .journey {
+    width: 330px;
+  }
+}
+
+@media (max-width: 940px) {
+  .journey {
+    width: 300px;
+  }
+
+  .right span {
+    width: 300px;
+  }
+}
+
+@media (max-width: 880px) {
+  .journey {
+    width: 400px;
+  }
+}
+
+@media (max-width: 790px) {
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    margin: 0;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .line {
+    display: none;
+  }
+
+  .journeys {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 520px) {
+  .aboutMe {
+    background-color: #111010;
+  }
+
+  .introduction img {
+    margin-top: 0;
+  }
+
+  .journey {
+
+    h3,
+    span {
+      font-size: 16px;
+    }
+
+    img {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .introduction img {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 40px;
+  }
+
+  .right {
+    h2 {
+      font-size: 32px;
+    }
+
+    span {
+      font-size: 16px;
+      width: 260px;
+    }
+  }
+
+  .journeys {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 330px) {
+  .introduction img {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 40px;
+  }
+
+  .right {
+    h2 {
+      font-size: 28px;
+    }
+
+    span {
+      font-size: 14px;
+      width: 230px;
+    }
+  }
+
+  .journeys {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .journey {
+    margin-left: 0;
+    margin-right: 0;
+
+    img {
+      height: 60px;
+      width: 60px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}

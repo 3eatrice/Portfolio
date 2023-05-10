@@ -1,0 +1,42 @@
+$grey: #131111;
+
+.legalNotice {
+  background-color: $grey;
+  color: white;
+  padding: 40px 100px 40px 100px;
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    text-decoration: underline;
+  }
+
+  hr {
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  a {
+    color: rgb(141, 141, 141);
+  }
+}
+
+@media (max-width: 700px) {
+  .legalNotice {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 0 25px;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 500px) {
+  .legalNotice {
+    font-size: 14px;
+    h1 {font-size: 25px;}
+    h2 {font-size: 20px;}
+    h3 {font-size: 18px;}
+  }
+}
