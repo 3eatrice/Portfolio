@@ -22,10 +22,10 @@ export class MyWorkComponent {
     type: 'js'
   },
   {
-    heading: 'Ring of Fire',
-    subtitle: 'Angular based card game',
-    link: 'https://beatrice-ambos.de/RingOfFire/index.html',
-    github: 'https://github.com/3eatrice/RingOfFire',
+    heading: 'Portfolio',
+    subtitle: 'Angular based webpage',
+    link: 'https://beatrice-ambos.de/',
+    github: 'https://github.com/3eatrice/Portfolio',
     type: 'ang'
   },
   {
@@ -34,7 +34,8 @@ export class MyWorkComponent {
     link: 'https://beatrice-ambos.de/Pokedex/index.html',
     github: 'https://github.com/3eatrice/Pok-dex',
     type: 'js'
-  }];
+  }
+];
 
   button: number = 0;
 

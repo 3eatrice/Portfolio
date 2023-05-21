@@ -1,4 +1,4 @@
-$turquoise: #2DFCD8;
+$yellow: #edd559;
 $grey: #131111;
 
 .aboutMe {
@@ -7,14 +7,13 @@ $grey: #131111;
 
 .introduction {
   display: flex;
+  padding-bottom: 20px;
   justify-content: center;
-
-  img {
-    height: 210px;
-    width: 210px;
-    border-radius: 100%;
-    margin: 69px 0 66px 0;
-  }
+  border-bottom-width: 2px ;
+  border-bottom-style: solid;
+  border-bottom-color: $yellow;
+  max-width: 80%; /* Beispielwert für die maximale Breite */
+  margin: 0 auto; /* Zentriert den Container horizontal */
 }
 
 .right {
@@ -22,10 +21,8 @@ $grey: #131111;
   flex-direction: column;
   align-items: center;
   color: white;
-  margin-left: 80px;
 
   h2 {
-    margin: 80px 0 26px 0;
     font-size: 36px;
     font-weight: 700;
     line-height: 28px;
@@ -62,17 +59,23 @@ $grey: #131111;
   width: 400px;
   margin-left: 45px;
   margin-right: 45px;
-
-  img {
-    height: 80px;
-    width: 80px;
+  
+  .circle-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
 
   h3 {
     margin: 22px 0 12px 0;
     font-size: 18px;
     font-weight: 400;
-    color: $turquoise;
+    color: $yellow;
     text-align: center;
   }
 
@@ -90,10 +93,6 @@ $grey: #131111;
 }
 
 @media (min-width: 2200px) {
-  .introduction img {
-    height: 300px;
-    width: 300px;
-  }
 
   .right {
     h2 {
@@ -108,10 +107,6 @@ $grey: #131111;
   }
 
   .journey {
-    img {
-      height: 100px;
-      width: 100px;
-    }
 
     h3 {
       margin: 22px 0 12px 0;
@@ -182,10 +177,6 @@ $grey: #131111;
 
   .right {
     margin: 0;
-
-    h2 {
-      margin-top: 0;
-    }
   }
 
   .line {
@@ -202,8 +193,10 @@ $grey: #131111;
     background-color: #111010;
   }
 
-  .introduction img {
+  .circle-img {
     margin-top: 0;
+    height: 70px;
+    width: 70px;
   }
 
   .journey {
@@ -212,18 +205,13 @@ $grey: #131111;
     span {
       font-size: 16px;
     }
-
-    img {
-      height: 70px;
-      width: 70px;
-    }
   }
 }
 
 @media (max-width: 450px) {
-  .introduction img {
-    height: 180px;
-    width: 180px;
+  .circle-img {
+    height: 80px;
+    width: 80px;
     margin-bottom: 40px;
   }
 
@@ -245,12 +233,6 @@ $grey: #131111;
 }
 
 @media (max-width: 330px) {
-  .introduction img {
-    height: 180px;
-    width: 180px;
-    margin-bottom: 40px;
-  }
-
   .right {
     h2 {
       font-size: 28px;
@@ -271,9 +253,15 @@ $grey: #131111;
     margin-left: 0;
     margin-right: 0;
 
+    .circle-img {
+      height: 80px;
+      width: 80px;
+      margin-bottom: 40px;
+    }
+
     img {
-      height: 60px;
-      width: 60px;
+      height: 30px;
+      width: 30px;
     }
 
     h3 {

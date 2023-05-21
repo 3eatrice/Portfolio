@@ -1,32 +1,54 @@
 html {
-    font-family: 'Inter';
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  app-root:empty + .loading {
-    position: absolute;
-    top: calc(50% - 60px);
-    left: calc(50% - 60px);
-    z-index: 100;
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  .overflow {
-    position: relative;
-    overflow-x: hidden;
-  }
+  font-family: 'Inter';
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+app-root:empty + .loading {
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  z-index: 100;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #edd559; 
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFC00A; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.overflow {
+  position: relative;
+  overflow-x: hidden;
+}
