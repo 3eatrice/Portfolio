@@ -78,7 +78,12 @@ button {
   }
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 2200px) {
+.introduction{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
   .introductionLeftText {
     font-size: 90px;
     line-height: 130px;
@@ -98,6 +103,7 @@ button {
 
   .arrow {
     bottom: 100px;
+    height: 200px;
   }
 }
 
