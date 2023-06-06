@@ -45,8 +45,6 @@ $orange: #FFC00A;
 @media (min-width: 2200px) {
   .header {
     height: 160px;
-    padding-left: 150px;
-    padding-right: 150px;
   }
 
   .links a {
@@ -55,6 +53,13 @@ $orange: #FFC00A;
 
   .imageLogo {
     height: 85px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header{
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 

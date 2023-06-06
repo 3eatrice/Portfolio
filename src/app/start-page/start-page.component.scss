@@ -80,8 +80,8 @@ button {
 
 @media (min-width: 2200px) {
 .introduction{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
   .introductionLeftText {
@@ -104,6 +104,13 @@ button {
   .arrow {
     bottom: 100px;
     height: 200px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .introduction{
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 
